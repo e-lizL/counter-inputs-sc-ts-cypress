@@ -56,16 +56,16 @@ function App() {
   return (
     <AppWrapper>
       <Heading>Counter with inputs, Typescript, SC & Cypress</Heading>
-      <Output>{count}</Output>
+      <Output data-cy="output">{count}</Output>
       <ButtonWrapper>
-        <Button onClick={decrement}>-</Button>
-        <Button onClick={increment}>+</Button>
-        <Button onClick={reset}>reset</Button>
+        <Button onClick={decrement} data-cy="decrement">-</Button>
+        <Button onClick={increment} data-cy="increment">+</Button>
+        <Button onClick={reset} data-cy="reset">reset</Button>
       </ButtonWrapper>
       
       <FieldWrapper>
         <label htmlFor="amount">amount:</label>
-        <input type="text" name="amount" value={amount} onChange={updateAmount}/>
+        <input type="text" name="amount" value={amount} onChange={updateAmount} data-cy="input"/>
       </FieldWrapper>
     </AppWrapper>
   );

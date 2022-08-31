@@ -28,7 +28,7 @@ const ButtonWrapper = styled.div`
   justify-content: center;
   gap: 12px;
   background: #FD9965;
-  padding: 20px;
+  padding: 40px;
 `;
 
 const Button = styled.button`
@@ -46,9 +46,9 @@ const Button = styled.button`
 const FieldWrapper = styled.div`
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
   background: #FD9965;
-  padding: 20px;
+  padding: 30px;
   margin-top: -20px;
   color: white;
 `
